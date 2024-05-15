@@ -6,11 +6,11 @@
 # print(list_of_groups)
 # print(list_of_groups == sorted(list_of_groups))
 
-def sorting_by_length(array):
+def insertion_sort(array):
     for n in range(len(array)):
         for i in range(n+1, len(array)):
             if array[n] <= array[i]:
                 array[i], array[n] = array[n], array[i]
-        print(array)
+    print(array)
     return array == sorted(array,reverse=True)
-print(sorting_by_length([5,2,2,21,1,3,4,5,6,7,8,9,10]))
+print(insertion_sort([5,2,2,21,1,3,4,5,6,7,8,9,10]))
